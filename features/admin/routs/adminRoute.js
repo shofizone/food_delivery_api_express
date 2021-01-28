@@ -8,6 +8,7 @@ const {
     updateASingleUser,
     deleteSingleUser,
 } = require('../controllers/userControllerAdmin')
+const {addNewMenu} = require('../controllers/menuItemControllerAdmin')
 
 const {createUserValidator} = require('../middleware/userValidator')
 
@@ -18,7 +19,7 @@ router.delete("/users/:id", deleteSingleUser)
 router.post("/users", createUserValidator, createNewUser)
 
 
-router.post("/menu-items", createNewUser)
+router.post("/food-menus", addNewMenu)
 
 
 module.exports = router;
