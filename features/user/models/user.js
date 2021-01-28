@@ -11,6 +11,7 @@ const userSchema = new Schema(
             type: String,
             trim: true,
             required: true,
+            unique:true,
         },
         address: {
             type: String,
@@ -18,7 +19,6 @@ const userSchema = new Schema(
         },
         password: {
             type: String,
-            minlength: 3,
             required: true,
         },
     },
