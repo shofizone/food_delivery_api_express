@@ -20,6 +20,7 @@ const options = {
     // Paths to files containing OpenAPI definitions
     apis: [
         './api/*.js',
+        './features/*/routes/*.js',
     ],
 };
 module.exports =  swaggerSpec = swaggerJsdoc(options);

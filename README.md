@@ -1,4 +1,4 @@
-# food_delivery_api
+# Food Delivery Api
 
 #### Clone The repo
 
@@ -6,7 +6,7 @@
 
 #### Navigate to project dir
 
-`$ cd foo_delevary_api`
+`$ cd food_delivery_api`
 
 #### Install dependency
 
@@ -22,4 +22,12 @@
 - Default url `$ localhost:27017`
 - To set custom DB url user environment variable `$ DB_URL` 
 
+### Working with server
+
+- http server should be running at `$ http://localhost:8000`
+
+### APIs docs
+
+- Api documentation hs been created with [swagger](https://swagger.io/)
+- Navigate to `$ http://localhost:8000/docs`
 
