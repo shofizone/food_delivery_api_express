@@ -6,10 +6,10 @@ exports.addNewMenu = async (req, res) => {
     if (!errors.isEmpty()) {
         return res.status(400).json({errors: errors.array()});
     }
-    let {name, description, price} = req.body;
+    let {name, description, price,position} = req.body;
     try {
         let newMenu = FoodMenu({
-            name, description, price,
+            name, description, price,position
         });
         let doc = await newMenu.save();
         return res.status(201).json(doc);

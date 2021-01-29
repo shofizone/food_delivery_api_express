@@ -8,6 +8,15 @@ const { validateJwt } = require('../../../core/middleware/jwtValidator')
  * @swagger
  * /api/food-menus/:
  *   get:
+ *     parameters:
+ *       - in: query
+ *         name: page
+ *         schema:
+ *           type: integer
+ *       - in: query
+ *         name: size
+ *         schema:
+ *           type: integer
  *     security:
  *       - bearerAuth: []
  *     summary: Retrieve a list of foods-menu
