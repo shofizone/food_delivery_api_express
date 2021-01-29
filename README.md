@@ -31,3 +31,10 @@
 - Api documentation hs been created with [swagger](https://swagger.io/)
 - Navigate to `$ http://localhost:8000/docs`
 
+### Getting Food Menu list 
+- Create a collection named `$ foodmenus`
+- Import `$ foodmenus.json` using Mongodb compass
+- Or food menu can be using api `$ /api/food-menus/`. See more details on `$ http://localhost:8000/docs`
+
+
+

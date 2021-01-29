@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "601460c58b116e536cf29d06"
+  },
+  "name": "Hummus with PERI-PERI Drizzle (V)",
+  "description": "Pour Smoky PERi-PERi Oil Over Creamy Hummus and Dig in with Strips Of Warm Pita",
+  "price": 250,
+  "createdAt": {
+    "$date": "2021-01-29T19:23:49.388Z"
+  },
+  "updatedAt": {
+    "$date": "2021-01-29T19:23:49.388Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "601461655d54f540dc3430a1"
+  },
+  "price": 250,
+  "name": "Red Pepper Dip (V)",
+  "description": "Dive Into Temping Roasted Red Pepper and Chili Spice Dip with Warm Pita Strips",
+  "createdAt": {
+    "$date": "2021-01-29T19:26:29.963Z"
+  },
+  "updatedAt": {
+    "$date": "2021-01-29T19:26:29.963Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "601461755d54f540dc3430a2"
+  },
+  "price": 250,
+  "name": "Red Pepper Dip (VI)",
+  "description": "Dive Into Temping Roasted Red Pepper and Chili Spice Dip with Warm Pita Strips",
+  "createdAt": {
+    "$date": "2021-01-29T19:26:45.060Z"
+  },
+  "updatedAt": {
+    "$date": "2021-01-29T19:26:45.060Z"
+  },
+  "__v": 0
+}]
