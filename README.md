@@ -34,7 +34,7 @@
 ### Getting Food Menu list 
 - Create a collection named `$ foodmenus`
 - Import `$ foodmenus.json` using Mongodb compass
-- Or food menu can be using api `$ /api/food-menus/`. See more details on `$ http://localhost:8000/docs`
+- Or food menu can be using api `$ /api/admin/food-menus/`. See more details on `$ http://localhost:8000/docs`
 
 
 
