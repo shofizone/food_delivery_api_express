@@ -2,11 +2,11 @@
 
 #### Clone The repo
 
-`$git clone https://github.com/shofizone/foo_delevary_api.git`
+`$git clone https://github.com/shofizone/food_delivery_api_express.git`
 
 #### Navigate to project dir
 
-`$ cd food_delivery_api`
+`$ cd food_delivery_api_express`
 
 #### Install dependency
 
