@@ -1,19 +1,19 @@
 const {validationResult} = require('express-validator');
 const FoodMenu = require('../../foodMenu/models/foodMenu')
 
-exports.addNewMenu = async (req,res) =>{
+exports.addNewMenu = async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         return res.status(400).json({errors: errors.array()});
     }
-    let {name,description,position} = req.body;
-    try{
+    let {name, description, price} = req.body;
+    try {
         let newMenu = FoodMenu({
-            name,description,position,
+            name, description, price,
         });
-        let doc =  await  newMenu.save();
+        let doc = await newMenu.save();
         return res.status(201).json(doc);
-    }catch (e) {
+    } catch (e) {
         console.log(e);
         return res.sendStatus(400);
     }

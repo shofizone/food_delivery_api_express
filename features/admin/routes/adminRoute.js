@@ -126,7 +126,7 @@ router.post("/users", createUserValidator, createNewUser)
  *                type: string
  *              description:
  *                type: string
- *              position:
+ *              price:
  *                type: number
  *     responses:
  *       201:

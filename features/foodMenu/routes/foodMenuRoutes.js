@@ -10,7 +10,7 @@ const { validateJwt } = require('../../../core/middleware/jwtValidator')
  *   get:
  *     security:
  *       - bearerAuth: []
- *     summary: Retrieve a single food menu
+ *     summary: Retrieve a list of foods-menu
  *     responses:
  *       200:
  *         description: Success
@@ -27,7 +27,7 @@ router.get("/", validateJwt ,getMenus)
  *         name: id
  *     security:
  *       - bearerAuth: []
- *     summary: Retrieve a list of foods-menu
+ *     summary: Retrieve a single food menu
  *     responses:
  *       200:
  *         description: Success

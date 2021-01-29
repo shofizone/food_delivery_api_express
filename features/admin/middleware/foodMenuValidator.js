@@ -11,5 +11,9 @@ module.exports.createFoodValidator =[
         .not()
         .isEmpty()
         .withMessage('description field is required'),
+    body('price')
+        .not()
+        .isEmpty()
+        .withMessage('price field is required'),
 
 ]

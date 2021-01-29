@@ -9,9 +9,10 @@ const foodMenuSchema = new Schema(
             required: true,
         },
         description: {type: String},
-        position:{
+        price:{
             type:Number,
-        }
+            required: true,
+        },
     },
     {
         timestamps: true,

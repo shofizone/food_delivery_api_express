@@ -12,15 +12,15 @@
 
 `$ npm install`
 
-#### Run The Project
-
-`$ npm start`
-
 ### Configure Database
 
 - This project depends on MongoDB.
 - Default url `$ localhost:27017`
 - To set custom DB url user environment variable `$ DB_URL` 
+
+#### Run The Project
+
+`$ npm start`
 
 ### Working with server
 
