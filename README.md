@@ -38,4 +38,6 @@
 
 ### ERD
 
+![ERD of DB](https://github.com/shofizone/food_delivery_api_express/blob/master/ERD.jpg?raw=true)
+
 
