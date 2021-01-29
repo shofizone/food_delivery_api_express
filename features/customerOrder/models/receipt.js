@@ -12,9 +12,6 @@ const receiptSchema = new Schema(
             ref: "Order",
             required: true
         },
-        items:[
-
-        ],
         totalCost:{
             type:Number,
             default:0,

@@ -36,5 +36,6 @@
 - Import `$ foodmenus.json` using Mongodb compass
 - Or food menu can be using api `$ /api/admin/food-menus/`. See more details on `$ http://localhost:8000/docs`
 
+### ERD
 
 
