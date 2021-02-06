@@ -17,8 +17,6 @@ router.get("/users/:id", getSingleUser)
 router.patch("/users/:id", updateASingleUser)
 router.delete("/users/:id", deleteSingleUser)
 router.post("/users", createUserValidator, createNewUser)
-
-
 router.post("/food-menus", addNewMenu)
 
 

@@ -5,8 +5,6 @@ const dotenv = require("dotenv");
 
 const swaggerUi = require("swagger-ui-express");
 const swaggerSpec = require("./swagger");
-
-
 const db = require("./core/DB/index");
 const apiRouter = require("./api/apiRouts")
 
