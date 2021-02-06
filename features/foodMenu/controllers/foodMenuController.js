@@ -6,9 +6,31 @@ exports.getMenus = async (req, res) => {
     if (!errors.isEmpty()) {
         return res.status(400).json({errors: errors.array()});
     }
+
+    let page = req.query.page || 1;
+    let size = parseInt(req.query.size) || 10;
+    let startIndex = (page - 1) * size;
+    let endIndex = page * size;
+
+    let result = {
+        page:page,
+        size: size,
+        next: false,
+        menus: [],
+    };
+
     try {
-        let doc = await FoodMenu.find();
-        return res.status(200).json(doc);
+        let count = await FoodMenu.countDocuments();
+        if (endIndex < count) {
+            result.next = true;
+        }
+
+        result.menus  = await FoodMenu.find()
+            .sort({'position': 1})
+            .limit(size)
+            .skip(startIndex)
+        ;
+        return res.status(200).json(result);
     } catch (e) {
         // console.log(e);
         return res.sendStatus(400);

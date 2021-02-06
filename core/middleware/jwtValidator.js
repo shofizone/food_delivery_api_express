@@ -2,37 +2,20 @@ const {body, header} = require('express-validator')
 const {isAccessTokenValid,validationResult } = require('../utils/jwtUtil');
 
 
-module.exports.validateJwt = [
+module.exports.validateJwt = header('authorization').custom(async (value,{req})=>{
 
-    header('authorization')
-        .not()
-        .isEmpty()
-        .withMessage('authorization field is required'),
-
-    header('authorization').custom(async (value,{req})=>{
-
+        if(!value){
+            throw new Error('Please provide a access token');
+        }
         if (await isAccessTokenValid(req.headers.authorization) === false) {
             throw new Error('Invalid Access Token');
         }else{
             return true;
         }
 
-    }),
-
-    // async (req, res, next) => {
-    //     let d = await isAccessTokenValid(req.headers.authorization)
-    //     if(d===true){
-    //         next();
-    //     }else{
-    //         validationResult(req).throw([
-    //             {
-    //                 error:"Invalid Access Token"
-    //             }
-    //         ]);
-    //     }
-    //
-    // }
+    });
 
 
-]
+
+
 
